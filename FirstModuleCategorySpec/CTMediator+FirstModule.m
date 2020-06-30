@@ -24,4 +24,9 @@
     return [self performTarget:@"FirstModule" action:@"viewController" params:dict shouldCacheTarget:NO];
 }
 
+- (UIViewController *)moduleFirstControllerWithUrl:(NSURL *)url completion:(void (^ _Nullable)(NSDictionary * _Nullable))completion{
+  
+    return [self performActionWithUrl:url completion:completion];
+}
+
 @end

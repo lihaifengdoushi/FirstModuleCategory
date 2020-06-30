@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIViewController *)moduleFirstControllerWithInfo:(NSDictionary *)param;
 
 - (UIViewController *)moduleFirstControllerWithInfo:(NSDictionary *)param callBack:(void(^)(NSString *result))callBack;
+// 外链/其他app打开FirstModule url格式： router://FirstModule/viewController？key1=value1&kye2=value2 其中的router:无意义 可以换其他任意字符
+- (UIViewController *)moduleFirstControllerWithUrl:(NSURL *)url completion:(void(^_Nullable)(NSDictionary * _Nullable info))completion;
 
 @end
 
