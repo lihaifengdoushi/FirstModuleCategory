@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'FirstModuleCategory' do
+
+
+pod 'CTMediator'
+
+end
